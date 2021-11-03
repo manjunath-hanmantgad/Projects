@@ -15,7 +15,7 @@ To construct the flow of data I will use Azure data factory pipelines.
 
 💭 Data Ingestion 
 
-Steps involved in ingesting CSV data :
+Steps involved in ingesting data :
 
 ↪️ Read the CSV file using the spark dataframe reader API
 
