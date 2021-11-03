@@ -13,7 +13,7 @@ Ingest data from API -> Mount the data into ADLS Gen2 as RAW data -> Data is sto
 To construct the flow of data I will use Azure data factory pipelines.
 
 
-💭 Data Ingestion 
+🌩️ Data Ingestion 
 
 Steps involved in ingesting data :
 
@@ -30,3 +30,10 @@ Steps involved in ingesting data :
 ↪️  Add ingestion date and race_timestamp to the dataframe
 
 ↪️ Write data to datalake as parquet
+
+
+🌩️ Databricks Workflows
+
+↪️ Connect multiple notebooks toghether
+↪️ Invoke single notebook from other notebook
+↪️ Configure and run/schedule databricks jobs
