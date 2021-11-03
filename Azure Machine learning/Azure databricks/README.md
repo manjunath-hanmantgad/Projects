@@ -31,8 +31,10 @@ Steps involved in ingesting data :
 
 ↪️ Write data to datalake as parquet
 
+------------------
 
 🌩️ Databricks Workflows
+
 
 ↪️ Connect multiple notebooks toghether
 ↪️ Invoke single notebook from other notebook
