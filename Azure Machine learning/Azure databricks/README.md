@@ -35,7 +35,10 @@ Steps involved in ingesting data :
 
 🌩️ Databricks Workflows
 
+(Instead of hardcoding create config or variables and invoke using %run command 📜)
 
 ↪️ Connect multiple notebooks toghether
+
 ↪️ Invoke single notebook from other notebook
+
 ↪️ Configure and run/schedule databricks jobs
