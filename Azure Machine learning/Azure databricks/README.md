@@ -47,3 +47,18 @@ Steps involved in ingesting data :
 -------------------------
 
 🌩️ Incremental Data loading as compared to Full load.
+
+
+------------------------
+
+🌩️ Azure Data factory Pipelines 
+
+The steps include:
+
+↪️ Create data factory service
+
+↪️ Linking data factory components
+
+↪️ Creating data factory Pipelines
+
+↪️ Creating triggers
