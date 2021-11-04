@@ -42,3 +42,8 @@ Steps involved in ingesting data :
 ↪️ Invoke single notebook from other notebook
 
 ↪️ Configure and run/schedule databricks jobs
+
+
+-------------------------
+
+🌩️ Incremental Data loading as compared to Full load.
