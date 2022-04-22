@@ -1,0 +1,13 @@
+name: productionnlp
+channels:
+  - defaults
+dependencies:
+  - scikit-learn
+  - spacy
+  - flask
+  - numpy
+  - notebook
+  - python=3.8
+  - pandas
+  - nltk
+prefix: C:\Users\0023ND744\Anaconda3\envs\productionnlp
