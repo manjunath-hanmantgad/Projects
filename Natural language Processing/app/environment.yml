@@ -10,4 +10,4 @@ dependencies:
   - python=3.8
   - pandas
   - nltk
-prefix: C:\Users\0023ND744\Anaconda3\envs\productionnlp
+prefix: [Masked]
