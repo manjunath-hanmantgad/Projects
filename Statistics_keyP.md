@@ -1,12 +1,19 @@
 mean/median
+
 weighted mean/weighted median 
+
 **trimmed mean (50%) = median 
+
 outlier  handling
+
 standard deviation(sq.rt of variance) , variance , mean aboslute deviation 
+
 interquartile range
 
 
 Exploring the Data Distribution
+
+
 	- boxplot
 	- histogram
 	- density plot
@@ -14,17 +21,22 @@ Exploring the Data Distribution
 	
 
 Correlation
+
+
 	- Correlation coefficient (Pearson’s correlation coefficient, Spearman's rank cr)
 	- Correlation matrix
 	- Scatterplot
 	
 	
 Visualizing Multiple Variables
+
 	- violin plots 
 	- hexagonal binning  
 	- scatter plots 
 	
 Random sampling
+
+
 	-Sample
 	-Population
 	-Stratified sampling
@@ -43,6 +55,8 @@ A/B testing
 	
 
 Hypothesis Tests
+
+
 	-Null hypothesis
 	-Alternative hypothesis
 	-One-way test
@@ -50,6 +64,8 @@ Hypothesis Tests
 	
 	
 Statistical Significance and p-Values
+
+
 	-p-value
 	-Alpha
 	-Type 1 error
@@ -57,12 +73,16 @@ Statistical Significance and p-Values
 	
 	
 t-Tests
+
+
 	-Test statistic
 	-t-statistic
 	-t-distribution
 	
 	
 ANOVA
+
+
 	-Pairwise comparison
 	-Omnibus test
 	-Decomposition of variance
@@ -71,6 +91,8 @@ ANOVA
 	
 	
 Chi-Square Test
+
+
 	-Chi-square statistic
 	-Expectation or expected
 	-
