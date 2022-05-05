@@ -10,6 +10,7 @@ standard deviation(sq.rt of variance) , variance , mean aboslute deviation
 
 interquartile range
 
+---
 
 Exploring the Data Distribution
 
@@ -19,6 +20,7 @@ Exploring the Data Distribution
 	- density plot
 	- frequency table 
 	
+---
 
 Correlation
 
@@ -26,13 +28,19 @@ Correlation
 	- Correlation coefficient (Pearson’s correlation coefficient, Spearman's rank cr)
 	- Correlation matrix
 	- Scatterplot
-	
+
+
+---	
 	
 Visualizing Multiple Variables
 
 	- violin plots 
 	- hexagonal binning  
 	- scatter plots 
+
+
+---
+
 	
 Random sampling
 
@@ -44,7 +52,7 @@ Random sampling
 	-simple random sampling
 	-Bias and sample bias 
 	
-	
+---	
 	
 A/B testing 
 
@@ -52,7 +60,9 @@ A/B testing
 	-Treatment group
 	-Control group
 	-Randomization
-	
+
+
+---	
 
 Hypothesis Tests
 
@@ -62,7 +72,10 @@ Hypothesis Tests
 	-One-way test
 	-Two-way test
 	
-	
+
+---
+
+
 Statistical Significance and p-Values
 
 
@@ -70,7 +83,9 @@ Statistical Significance and p-Values
 	-Alpha
 	-Type 1 error
 	-Type 2 error
-	
+
+
+---	
 	
 t-Tests
 
@@ -79,6 +94,10 @@ t-Tests
 	-t-statistic
 	-t-distribution
 	
+
+
+---
+
 	
 ANOVA
 
@@ -88,6 +107,10 @@ ANOVA
 	-Decomposition of variance
 	-F-statistic
 	-SS
+
+
+---
+
 	
 	
 Chi-Square Test
@@ -95,7 +118,9 @@ Chi-Square Test
 
 	-Chi-square statistic
 	-Expectation or expected
-	-
+
+
+---
 	
 	
 Multi-Arm Bandit Algorithm
