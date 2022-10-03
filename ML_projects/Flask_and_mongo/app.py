@@ -1,9 +1,22 @@
-from flask import Flask,jsonify
+from flask import Flask,jsonify, request
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
     return "Hello World!"
+
+# adding POST method
+
+@app.route('/sum_function', methods=["POST"])
+def sum_function():
+    dataDict = request.get_json()
+    x = dataDict["x"]
+    y = dataDict["y"]
+    z = x+y
+    retjson = {
+        "z" : z
+    }
+    return jsonify(retjson), 200
 
 @app.route('/bye')
 
