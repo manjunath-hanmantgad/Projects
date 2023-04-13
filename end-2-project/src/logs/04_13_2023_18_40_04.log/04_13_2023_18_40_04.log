@@ -1,0 +1,5 @@
+[2023-04-13 18:40:27,503] 32 root - INFO - Begin the data ingestion method
+[2023-04-13 18:40:27,727] 36 root - INFO - Reading the raw dataset.
+[2023-04-13 18:40:27,821] 40 root - INFO - Initialising train test split
+[2023-04-13 18:40:27,848] 42 root - INFO - Splitting is done and train and test data is getting saved to train csv and test csv into artifacts folder
+[2023-04-13 18:40:27,945] 45 root - INFO - Data ingestion is completed
