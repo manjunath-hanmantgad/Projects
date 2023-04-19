@@ -14,6 +14,7 @@ from sklearn.model_selection import train_test_split
 # for train test splitting
 from dataclasses import dataclass
 from src.components.data_transformation import DataTransformation, DataTransformationConfig
+from src.components.model_trainer import ModelTrainerConfig,ModelTrainer
 # required for inputs to save raw data , test/train data
 # this class is used for that 
 @dataclass
@@ -61,7 +62,12 @@ if __name__=="__main__":
     train_data, test_data = obj.initiate_data_ingestion()
     data_transformation=DataTransformation() # this will call from data transformation
     # calling data transformation
-    data_transformation.initiate_data_transformation(train_data,test_data)
+    #data_transformation.initiate_data_transformation(train_data,test_data)
+    train_arr,test_arr, = data_transformation.initiate_data_transformation(train_data,test_data)
+    
+    model_trainer = ModelTrainer()
+    print(model_trainer.initiate_model_trainer(train_arr,test_arr))
+    
     
 
 
