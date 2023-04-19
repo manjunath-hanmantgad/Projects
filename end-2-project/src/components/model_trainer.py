@@ -48,9 +48,28 @@ class ModelTrainer():
                 "XGBRegressor": XGBRegressor(),
                 "Adaboost Regressor": AdaBoostRegressor()
             }
-            model_report: dict= evaluate_model(X_train,y_train,models=models)
+            model_report: dict= evaluate_models(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,
+                                               models=models)
             
-        except:
-            pass
+            # get the best performing model 
+            
+            best_model_score = max(sorted(model_report.values()))
+            
+            # get best model name
+            best_model_name = list(model_report.keys())[
+                list(model_report.values()).index(best_model_score)
+            ]
+            
+            best_model = models[best_model_name]
+            
+            if best_model_score < 0.6:
+                raise CustomException("All model scores aare less than 0.6. Work on yur tuning.")
+            
+            save_object(
+                file_path = self.model_trainer_config.trained_model_file_path,
+                obj=best_model
+            )
+        except Exception as e:
+            return CustomException(e,sys)
         
             
