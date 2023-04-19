@@ -13,6 +13,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 # for train test splitting
 from dataclasses import dataclass
+from src.components.data_transformation import DataTransformation, DataTransformationConfig
 # required for inputs to save raw data , test/train data
 # this class is used for that 
 @dataclass
@@ -52,9 +53,15 @@ class DataIngestion:
         
 # running locally
 
+# here we combined data ingestion and data transformation
+# if data validation was there then combine that as well here.
 if __name__=="__main__":
     obj=DataIngestion()# creates artifacts folder
-    obj.initiate_data_ingestion()
+    #obj.initiate_data_ingestion()
+    train_data, test_data = obj.initiate_data_ingestion()
+    data_transformation=DataTransformation() # this will call from data transformation
+    # calling data transformation
+    data_transformation.initiate_data_transformation(train_data,test_data)
     
 
 

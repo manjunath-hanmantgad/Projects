@@ -1,0 +1,9 @@
+[2023-04-19 09:53:54,537] 33 root - INFO - Begin the data ingestion method
+[2023-04-19 09:53:54,551] 37 root - INFO - Reading the raw dataset.
+[2023-04-19 09:53:54,568] 41 root - INFO - Initialising train test split
+[2023-04-19 09:53:54,571] 43 root - INFO - Splitting is done and train and test data is getting saved to train csv and test csv into artifacts folder
+[2023-04-19 09:53:54,587] 46 root - INFO - Data ingestion is completed
+[2023-04-19 09:53:54,636] 81 root - INFO - Read Train and test data completed.
+[2023-04-19 09:53:54,636] 82 root - INFO - Obtaining preprocessing object starting
+[2023-04-19 09:53:54,636] 55 root - INFO - Standard scaling completed
+[2023-04-19 09:53:54,637] 56 root - INFO - Categorical columns encoding completed
