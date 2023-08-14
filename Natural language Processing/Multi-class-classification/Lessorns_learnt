@@ -1,7 +1,0 @@
-Lessons learnt :-
-
-1. Do not use complete dataset if its too large ( subset the dataset and use in batches)
-2. Check for missing values 
-2. Use countVectroiser before TfidfVectoriser to study the data [https://ai.plainenglish.io/whats-wrong-with-this-graph-a-closer-look-at-troubleshooting-tf-idf-4217cf38c5e7]
-2. Should I be using sparse matrix or dense matrix ?
-2. Which are good methods available in sklearn for feature selection ? [https://towardsdatascience.com/5-feature-selection-method-from-scikit-learn-you-should-know-ed4d116e4172]
