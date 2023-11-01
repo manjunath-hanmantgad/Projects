@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PDF to JPEG Converter</title>
+</head>
+<body>
+    <h1>Upload ZIP File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="text" name="prompt" placeholder="Enter your prompt">
+        <input type="submit" value="Upload">
+    </form>
+    <div id="message">
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
