@@ -1,7 +1,7 @@
 # src/extraction/data_extraction.py
 import pandas as pd
 import logging
-from prefect import task
+from prefect import task, Flow
 from database.db_connection import create_db_engine
 from database.query_builder import build_select_all_query
 
@@ -10,21 +10,6 @@ logger = logging.getLogger(__name__)
 
 @task
 def extract_data_from_db(table_name, cache_path="data_cache.pkl"):
-    """
-    Extracts data from a PostgreSQL database table. Attempts to load data from a local cache
-    and fetches from the database if the cache is not found.
-
-    Parameters:
-        table_name (str): The name of the database table.
-        cache_path (str, optional): The path to the local cache file. Defaults to "data_cache.pkl".
-
-    Returns:
-        pd.DataFrame: The extracted data.
-
-    Raises:
-        FileNotFoundError: If the cache file is not found.
-        Exception: If there is an error fetching data from the database or loading the cache.
-    """
     try:
         # Attempt to load data from cache
         data = pd.read_pickle(cache_path)
@@ -39,8 +24,19 @@ def extract_data_from_db(table_name, cache_path="data_cache.pkl"):
             data.to_pickle(cache_path)
             logger.info("Data loaded from the database and saved to cache.")
         except Exception as e:
-            # Handle any database-related exceptions
             logger.error(f"Error fetching data from the database: {e}")
             data = None  # Set data to None to indicate an error
 
     return data
+
+# Configure the logger
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+# Define Prefect flow
+with Flow("data_extraction_flow") as flow:
+    table_name = "source_table"  # Update with your actual table name
+    data = extract_data_from_db(table_name)
+
+# Run the Prefect flow when the script is executed directly
+if __name__ == "__main__":
+    flow.run()
