@@ -23,6 +23,7 @@ def create_db_engine():
         database_name = os.environ.get("DB_NAME")
 
         connection_string = f"postgresql://{username}:{password}@{host}/{database_name}"
+        print(f"Using database: {database_name}")
         engine = create_engine(connection_string)
         logger.info("Database engine created successfully.")
         return engine
