@@ -1,0 +1,7 @@
+image:
+  repository: your-docker-repo/your-app
+  tag: latest
+
+service:
+  name: your-app-service
+  port: 80
